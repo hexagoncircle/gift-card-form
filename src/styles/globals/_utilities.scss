@@ -9,18 +9,6 @@
   width: 1px;
 }
 
-.flex-equal-widths {
-  display: block;
-
-  @media (min-width: $bp-medium) {
-    display: flex;
-
-    > * {
-      flex: 1 1 0px;
-    }
-  }
-}
-
 .section-margin {
   + * {
     margin-top: calc(var(--spacer) * 2);

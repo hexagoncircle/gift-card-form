@@ -199,3 +199,15 @@ input[type="radio"] {
     max-width: 100%;
   }
 }
+
+.form-group--equal-widths {
+  display: block;
+
+  @media (min-width: $bp-medium) {
+    display: flex;
+
+    > * {
+      flex: 1 1 0px;
+    }
+  }
+}

@@ -155,7 +155,7 @@ class GiftCardForm extends React.Component {
         <fieldset className="gift-card-fieldset__recipient section-margin">
           <legend>Send a {amountText} gift card to:</legend>
 
-          <div className="form-group flex-equal-widths">
+          <div className="form-group form-group--equal-widths">
             <TextInput
               error={errors.recipientName}
               handleChange={this.updateFieldValues}
@@ -183,7 +183,7 @@ class GiftCardForm extends React.Component {
         <fieldset className="gift-card-fieldset__sender section-margin">
           <legend>From:</legend>
 
-          <div className="form-group flex-equal-widths">
+          <div className="form-group form-group--equal-widths">
             <TextInput
               error={errors.senderName}
               handleChange={this.updateFieldValues}

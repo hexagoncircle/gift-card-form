@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.scss';
 import GiftCardForm from './components/GiftCardForm';
+import './styles/App.scss';
 
 function App() {
   return (

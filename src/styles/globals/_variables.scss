@@ -1,0 +1,19 @@
+$bp-medium: 750px;
+
+:root {
+  --grid-gap: 1rem;
+  --spacer: 1rem;
+  --label-margin: 0.25rem;
+  --legend-margin: calc(var(--label-margin) * 2);
+  --input-padding: 1rem;
+  --input-border-radius: 0.25rem;
+  --input-border-color: lightgray;
+  --input-border-color-focus: dodgerblue;
+  --input-border-color-error: crimson;
+  --input-border-color-selected: mediumseagreen;
+  --input-box-shadow-focus: rgba(black, 0.25) 0 3px 6px -3px;
+
+  --button-bg-color: mediumseagreen;
+  --button-bg-color-focus: seagreen;
+  --button-color: white;
+}

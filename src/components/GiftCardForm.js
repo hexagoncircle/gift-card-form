@@ -129,7 +129,8 @@ class GiftCardForm extends React.Component {
   }
 
   render() {
-    const amountText = this.state.fields.amount && !this.state.errors.amount ? `$${this.state.fields.amount}` : '';
+    const { fields, errors } = this.state;
+    const amountText = fields.amount && !errors.amount ? `$${fields.amount}` : '';
 
     return (
       <form id="gift-card-form" noValidate onSubmit={this.submitForm}>
@@ -146,12 +147,12 @@ class GiftCardForm extends React.Component {
             <GiftCardAmount amount="100" setAmount={this.setAmount} />
             <GiftCardAmount amount="200" setAmount={this.setAmount} />
             <GiftCardAmountCustom
-              error={this.state.errors.amount}
+              error={errors.amount}
               handleChange={this.setCustomAmount}
             />
           </div>
 
-          <InputErrorMessage message={this.state.errors.amount} />
+          <InputErrorMessage message={errors.amount} />
         </fieldset>
 
         <fieldset className="section-margin">
@@ -159,25 +160,25 @@ class GiftCardForm extends React.Component {
 
           <div className="form-group flex-equal-widths">
             <TextInput
-              error={this.state.errors.recipientName}
+              error={errors.recipientName}
               handleChange={this.updateStateFields}
               id="recipient-name"
               label="Recipient's Name"
               name="recipientName"
               placeholder="Name of recipient"
               type="text"
-              value={this.state.fields.recipientName || ''}
+              value={fields.recipientName || ''}
             />
 
             <TextInput
-              error={this.state.errors.recipientEmail}
+              error={errors.recipientEmail}
               handleChange={this.updateStateFields}
               id="recipient-email"
               label="Recipient's Email"
               name="recipientEmail"
               placeholder="example@domain.com"
               type="email"
-              value={this.state.fields.recipientEmail || ''}
+              value={fields.recipientEmail || ''}
             />
           </div>
         </fieldset>
@@ -187,25 +188,25 @@ class GiftCardForm extends React.Component {
 
           <div className="form-group flex-equal-widths">
             <TextInput
-              error={this.state.errors.senderName}
+              error={errors.senderName}
               handleChange={this.updateStateFields}
               id="sender-name"
               label="Sender's Name"
               name="senderName"
               placeholder="Name of Sender"
               type="text"
-              value={this.state.fields.senderName || ''}
+              value={fields.senderName || ''}
             />
 
             <TextInput
-              error={this.state.errors.senderEmail}
+              error={errors.senderEmail}
               handleChange={this.updateStateFields}
               id="sender-email"
               label="Sender's Email"
               name="senderEmail"
               placeholder="example@domain.com"
               type="email"
-              value={this.state.fields.senderEmail || ''}
+              value={fields.senderEmail || ''}
             />
           </div>
         </fieldset>

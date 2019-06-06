@@ -8,6 +8,7 @@
   max-width: 1000px;
 }
 
+
 // Global form styles
 legend {
   display: block;
@@ -77,6 +78,7 @@ input[type="radio"] {
   }
 }
 
+
 // Form error styles
 .has-error {
   label,
@@ -95,6 +97,16 @@ input[type="radio"] {
   font-size: 0.8em;
   margin: var(--label-margin) 0;
 }
+
+
+// Fieldset description text
+.fieldset-description {
+  color: gray;
+  display: block;
+  font-size: 0.8em;
+  margin-bottom: var(--label-margin);
+}
+
 
 // Input groups
 .input-group {
@@ -132,6 +144,7 @@ input[type="radio"] {
     background-color: #ebebeb;
   }
 }
+
 
 // Gift card amounts
 .gift-card-fieldset__amount .form-group {
@@ -172,6 +185,7 @@ input[type="radio"] {
   }
 }
 
+
 // Form element groups
 .form-group {
   display: flex;
@@ -184,12 +198,4 @@ input[type="radio"] {
     margin: 0 calc(var(--grid-gap) / 2) var(--grid-gap);
     max-width: 100%;
   }
-}
-
-//
-.fieldset-description {
-  color: gray;
-  display: block;
-  font-size: 0.8em;
-  margin-bottom: var(--label-margin);
 }

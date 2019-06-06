@@ -4,6 +4,7 @@ import GiftCardAmountCustom from './GiftCardAmountCustom';
 import InputErrorMessage from './InputErrorMessage';
 import TextInput from './TextInput';
 
+// These messages would pull from
 const ERROR_MESSAGES = {
   amount: 'Please enter a gift card value between $5 and $500.',
   recipientName: 'Enter the recipient\'s name.',

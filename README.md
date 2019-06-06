@@ -2,6 +2,8 @@
 
 A gift card selection form prototype built with React.
 
+Prototype Link: [hexagoncircle.com/gift-card-form](https://hexagoncircle.com/gift-card-form/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

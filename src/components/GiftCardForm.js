@@ -142,14 +142,11 @@ class GiftCardForm extends React.Component {
           </span>
 
           <div className="form-group gift-card-amount__options">
-            <GiftCardAmount amount="25" setAmount={this.setAmount} />
-            <GiftCardAmount amount="50" setAmount={this.setAmount} />
-            <GiftCardAmount amount="100" setAmount={this.setAmount} />
-            <GiftCardAmount amount="200" setAmount={this.setAmount} />
-            <GiftCardAmountCustom
-              error={errors.amount}
-              handleChange={this.setCustomAmount}
-            />
+            <GiftCardAmount amount="25" handleChange={this.setAmount} />
+            <GiftCardAmount amount="50" handleChange={this.setAmount} />
+            <GiftCardAmount amount="100" handleChange={this.setAmount} />
+            <GiftCardAmount amount="200" handleChange={this.setAmount} />
+            <GiftCardAmountCustom error={errors.amount} handleChange={this.setCustomAmount}/>
           </div>
 
           <InputErrorMessage message={errors.amount} />

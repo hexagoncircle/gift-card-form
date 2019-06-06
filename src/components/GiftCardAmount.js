@@ -9,7 +9,7 @@ class GiftCardAmount extends React.Component {
           type="radio"
           name="amount"
           value={this.props.amount}
-          onChange={this.props.setAmount}
+          onChange={this.props.handleChange}
         />
 
         <label htmlFor={`gift-card-amount__${this.props.amount}`}>

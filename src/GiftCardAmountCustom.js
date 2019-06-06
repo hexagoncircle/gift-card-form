@@ -11,6 +11,7 @@ class GiftCardAmountCustom extends React.Component {
           type="number"
           autoComplete="off"
           placeholder="Other"
+          pattern="\d*"
           onChange={this.props.handleChange}
         />
       </div>

@@ -10,7 +10,7 @@ class Input extends React.Component {
         <input
           id={this.props.id}
           name={this.props.name}
-          type="text"
+          type={this.props.type}
           placeholder={this.props.placeholder}
           value={this.props.value}
           onChange={this.props.handleChange}

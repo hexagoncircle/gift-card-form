@@ -173,6 +173,7 @@ class GiftCardForm extends React.Component {
               label="Recipient's Name"
               name="recipientName"
               placeholder="Name of recipient"
+              type="text"
               value={this.state.fields.recipientName || ''}
             />
 
@@ -183,6 +184,7 @@ class GiftCardForm extends React.Component {
               label="Recipient's Email"
               name="recipientEmail"
               placeholder="example@domain.com"
+              type="email"
               value={this.state.fields.recipientEmail || ''}
             />
           </div>
@@ -199,6 +201,7 @@ class GiftCardForm extends React.Component {
               label="Sender's Name"
               name="senderName"
               placeholder="Name of Sender"
+              type="text"
               value={this.state.fields.senderName || ''}
             />
 
@@ -209,6 +212,7 @@ class GiftCardForm extends React.Component {
               label="Sender's Email"
               name="senderEmail"
               placeholder="example@domain.com"
+              type="email"
               value={this.state.fields.senderEmail || ''}
             />
           </div>

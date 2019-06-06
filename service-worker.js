@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/gift-card-form/precache-manifest.0f71bbc3a9a86f1110ad7a648d235f1d.js"
+  "/gift-card-form/precache-manifest.042142f59992f518928e03cc6dc1f3dd.js"
 );
 
 self.addEventListener('message', (event) => {

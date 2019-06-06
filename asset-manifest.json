@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/gift-card-form/static/css/main.925cbff5.chunk.css",
-    "main.js": "/gift-card-form/static/js/main.5d4363bd.chunk.js",
-    "main.js.map": "/gift-card-form/static/js/main.5d4363bd.chunk.js.map",
+    "main.css": "/gift-card-form/static/css/main.72719440.chunk.css",
+    "main.js": "/gift-card-form/static/js/main.d2c37207.chunk.js",
+    "main.js.map": "/gift-card-form/static/js/main.d2c37207.chunk.js.map",
     "runtime~main.js": "/gift-card-form/static/js/runtime~main.6d8d263d.js",
     "runtime~main.js.map": "/gift-card-form/static/js/runtime~main.6d8d263d.js.map",
-    "static/js/2.2668f2aa.chunk.js": "/gift-card-form/static/js/2.2668f2aa.chunk.js",
-    "static/js/2.2668f2aa.chunk.js.map": "/gift-card-form/static/js/2.2668f2aa.chunk.js.map",
+    "static/js/2.ab533eb6.chunk.js": "/gift-card-form/static/js/2.ab533eb6.chunk.js",
+    "static/js/2.ab533eb6.chunk.js.map": "/gift-card-form/static/js/2.ab533eb6.chunk.js.map",
     "index.html": "/gift-card-form/index.html",
-    "precache-manifest.0f71bbc3a9a86f1110ad7a648d235f1d.js": "/gift-card-form/precache-manifest.0f71bbc3a9a86f1110ad7a648d235f1d.js",
+    "precache-manifest.042142f59992f518928e03cc6dc1f3dd.js": "/gift-card-form/precache-manifest.042142f59992f518928e03cc6dc1f3dd.js",
     "service-worker.js": "/gift-card-form/service-worker.js",
-    "static/css/main.925cbff5.chunk.css.map": "/gift-card-form/static/css/main.925cbff5.chunk.css.map"
+    "static/css/main.72719440.chunk.css.map": "/gift-card-form/static/css/main.72719440.chunk.css.map"
   }
 }

@@ -3,16 +3,7 @@ import GiftCardAmount from './GiftCardAmount';
 import GiftCardAmountCustom from './GiftCardAmountCustom';
 import InputErrorMessage from './InputErrorMessage';
 import TextInput from './TextInput';
-
-// These messages would pull from
-const ERROR_MESSAGES = {
-  amount: 'Please enter a gift card value between $5 and $500.',
-  recipientName: 'Enter the recipient\'s name.',
-  recipientEmail: 'Enter a valid email address for the recipient',
-  senderName: 'Enter the sender\'s name',
-  senderEmail: 'Enter a valid email address for the sender'
-}
-const TIMER_DELAY = 500;
+import { errorMessages } from '../data/errorMessages.json';
 
 class GiftCardForm extends React.Component {
   constructor(props) {
@@ -56,7 +47,7 @@ class GiftCardForm extends React.Component {
     let value = e.target.value;
 
     clearTimeout(this.timer);
-    this.timer = setTimeout(() => this.validateAmount(value), TIMER_DELAY);
+    this.timer = setTimeout(() => this.validateAmount(value), 500);
 
     if (value !== '') this.deselectRadioControls();
   }
@@ -93,7 +84,7 @@ class GiftCardForm extends React.Component {
 
     if (value && (value < this.props.minAmount || value > this.props.maxAmount)) {
       isValid = false;
-      errors.amount = ERROR_MESSAGES.amount
+      errors.amount = errorMessages.amount;
     } else {
       isValid = true;
       errors.amount = '';
@@ -112,23 +103,23 @@ class GiftCardForm extends React.Component {
 
     if (this.state.validate) {
       if (!fields.amount || !this.validateAmount(fields.amount)) {
-        errors.amount = ERROR_MESSAGES.amount;
+        errors.amount = errorMessages.amount;
       }
 
       if (!fields.recipientName) {
-        errors.recipientName = ERROR_MESSAGES.recipientName;
+        errors.recipientName = errorMessages.recipientName;
       }
 
       if (!fields.recipientEmail || !emailPattern.test(fields.recipientEmail)) {
-        errors.recipientEmail = ERROR_MESSAGES.recipientEmail;
+        errors.recipientEmail = errorMessages.recipientEmail;
       }
 
       if (!fields.senderName) {
-        errors.senderName = ERROR_MESSAGES.senderName;
+        errors.senderName = errorMessages.senderName;
       }
 
       if (!fields.senderEmail || !emailPattern.test(fields.recipientEmail)) {
-        errors.senderEmail = ERROR_MESSAGES.senderEmail;
+        errors.senderEmail = errorMessages.senderEmail;
       }
     }
 

@@ -1,0 +1,9 @@
+{
+  "errorMessages": {
+    "amount": "Please enter a gift card value between $5 and $500.",
+    "recipientName": "Enter the recipient's name.",
+    "recipientEmail": "Enter a valid email address for the recipient",
+    "senderName": "Enter the sender's name",
+    "senderEmail": "Enter a valid email address for the sender"
+  }
+}

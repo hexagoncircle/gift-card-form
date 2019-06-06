@@ -19,7 +19,7 @@ class GiftCardForm extends React.Component {
     this.setAmount = this.setAmount.bind(this);
     this.setCustomAmount = this.setCustomAmount.bind(this);
     this.submitForm = this.submitForm.bind(this);
-    this.updateStateFields = this.updateStateFields.bind(this);
+    this.updateFieldValues = this.updateFieldValues.bind(this);
     this.validateForm = this.validateForm.bind(this);
   }
 
@@ -67,7 +67,7 @@ class GiftCardForm extends React.Component {
     });
   }
 
-  updateStateFields(e) {
+  updateFieldValues(e) {
     let fields = this.state.fields;
 
     fields[e.target.name] = e.target.value;
@@ -134,14 +134,14 @@ class GiftCardForm extends React.Component {
 
     return (
       <form id="gift-card-form" noValidate onSubmit={this.submitForm}>
-        <fieldset className="gift-card-amount section-margin">
+        <fieldset className="gift-card-fieldset__amount section-margin">
           <legend>Select a gift card amount</legend>
 
-          <span className="additional-description">
+          <p className="fieldset-description">
             Choose an amount between ${this.props.minAmount} and ${this.props.maxAmount}
-          </span>
+          </p>
 
-          <div className="form-group gift-card-amount__options">
+          <div className="form-group">
             <GiftCardAmount amount="25" handleChange={this.setAmount} />
             <GiftCardAmount amount="50" handleChange={this.setAmount} />
             <GiftCardAmount amount="100" handleChange={this.setAmount} />
@@ -152,13 +152,13 @@ class GiftCardForm extends React.Component {
           <InputErrorMessage message={errors.amount} />
         </fieldset>
 
-        <fieldset className="section-margin">
+        <fieldset className="gift-card-fieldset__recipient section-margin">
           <legend>Send a {amountText} gift card to:</legend>
 
           <div className="form-group flex-equal-widths">
             <TextInput
               error={errors.recipientName}
-              handleChange={this.updateStateFields}
+              handleChange={this.updateFieldValues}
               id="recipient-name"
               label="Recipient's Name"
               name="recipientName"
@@ -169,7 +169,7 @@ class GiftCardForm extends React.Component {
 
             <TextInput
               error={errors.recipientEmail}
-              handleChange={this.updateStateFields}
+              handleChange={this.updateFieldValues}
               id="recipient-email"
               label="Recipient's Email"
               name="recipientEmail"
@@ -180,13 +180,13 @@ class GiftCardForm extends React.Component {
           </div>
         </fieldset>
 
-        <fieldset className="gift-card__information section-margin">
+        <fieldset className="gift-card-fieldset__sender section-margin">
           <legend>From:</legend>
 
           <div className="form-group flex-equal-widths">
             <TextInput
               error={errors.senderName}
-              handleChange={this.updateStateFields}
+              handleChange={this.updateFieldValues}
               id="sender-name"
               label="Sender's Name"
               name="senderName"
@@ -197,7 +197,7 @@ class GiftCardForm extends React.Component {
 
             <TextInput
               error={errors.senderEmail}
-              handleChange={this.updateStateFields}
+              handleChange={this.updateFieldValues}
               id="sender-email"
               label="Sender's Email"
               name="senderEmail"

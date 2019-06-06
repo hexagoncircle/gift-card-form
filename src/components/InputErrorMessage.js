@@ -5,9 +5,9 @@ class InputErrorMessage extends React.Component {
     return(
       <React.Fragment>
         {this.props.message &&
-          <span className="error-message">
+          <p className="error-message">
             {this.props.message}
-          </span>
+          </p>
         }
       </React.Fragment>
     )
